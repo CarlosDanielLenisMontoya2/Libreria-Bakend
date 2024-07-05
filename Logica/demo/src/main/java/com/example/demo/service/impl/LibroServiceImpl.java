@@ -22,6 +22,7 @@ public class LibroServiceImpl implements LibroService {
     @Override
     public LibroDto create(LibroDto libroDto) {
         Libro libro = transformer.libroTransformerFromDto(libroDto);
+        libro.setDisponible(libro.getUnidades() > 0); // Actualizar la disponibilidad
         libroDto = transformer.libroTransformerFromModel(repository.save(libro));
         return libroDto;
     }
@@ -29,10 +30,10 @@ public class LibroServiceImpl implements LibroService {
     @Override
     public LibroDto update(LibroDto libroDto) {
         Libro libro = transformer.libroTransformerFromDto(libroDto);
+        libro.setDisponible(libro.getUnidades() > 0); // Actualizar la disponibilidad
         libroDto = transformer.libroTransformerFromModel(repository.save(libro));
         return libroDto;
     }
-
     @Override
     public void delete(Long id) {
         repository.deleteById(id);

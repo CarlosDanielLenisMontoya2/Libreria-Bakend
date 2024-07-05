@@ -16,6 +16,7 @@ public class LibroTransformer {
         libro.setDescripcion(libroDto.getDescripcion());
         libro.setUnidades(libroDto.getUnidades());
         libro.setAutorId(libroDto.getAutorId());
+        libro.setDisponible(libroDto.getDisponible());
         return libro;
     }
     public LibroDto libroTransformerFromModel(Libro libro){
@@ -27,6 +28,7 @@ public class LibroTransformer {
         dto.setDescripcion(libro.getDescripcion());
         dto.setUnidades(libro.getUnidades());
         dto.setAutorId(libro.getAutorId());
+        dto.setDisponible(libro.getDisponible());
         return dto;
     }
 }

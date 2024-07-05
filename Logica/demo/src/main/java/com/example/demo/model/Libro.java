@@ -22,4 +22,6 @@ public class Libro {
     private int unidades;
     @Column(name ="autor_id")
     private  Long autorId;
+    @Column(name = "disponible")
+    private Boolean disponible;
 }

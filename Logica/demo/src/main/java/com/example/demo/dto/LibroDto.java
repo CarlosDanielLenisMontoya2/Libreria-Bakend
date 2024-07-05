@@ -16,4 +16,5 @@ public class LibroDto {
     private String descripcion;
     private int unidades;
     private  Long autorId;
+    private Boolean disponible;
 }

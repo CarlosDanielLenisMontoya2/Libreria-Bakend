@@ -10,4 +10,5 @@ public interface PrestamoService {
     void delete (Long id);
     Page<Prestamo> read(Integer pageSize, Integer pageNumber);
     Prestamo findById(Long id);
+
 }

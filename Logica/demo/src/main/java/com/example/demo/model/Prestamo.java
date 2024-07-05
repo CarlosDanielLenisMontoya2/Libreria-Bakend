@@ -20,9 +20,11 @@ public class Prestamo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Timestamp fecha;
+    private Timestamp fechaF;
     @Column(name = "cliente_id")
     private Long clienteId;
     @Column(name = "libro_id")
     private Long libroId;
+
 
 }

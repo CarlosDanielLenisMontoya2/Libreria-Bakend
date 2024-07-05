@@ -14,6 +14,8 @@ import java.sql.Timestamp;
 public class PrestamoDto {
     private Long id;
     private Timestamp fecha;
+    private Timestamp fechaF;
     private Long clienteId;
     private Long libroId;
+
 }
